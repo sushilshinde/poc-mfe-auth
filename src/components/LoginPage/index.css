@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
+    background: #eefaff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+}
+
+.login-card {
+    width: 50%;
+    margin: 6rem auto;
+    padding: 3.5rem;
+    box-shadow: 0 0 12px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+      105deg,
+      rgb(47 164 231 / 25%) 50%,
+      #178acc8c 50.1%
+  ),
+  url(https://www.jotform.com/blog/wp-content/uploads/2020/10/Guide-to-Effective-Communication-in-the-Workplace-Featured-Image.png);
+}
+
+form {
+    background: #eefaffa8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+input {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+}
