@@ -9,7 +9,7 @@ const { dependencies } = require('./package.json')
 
 const dotenv = require('dotenv');
 
-const env = dotenv.config().parsed || { API_URL: 'https://poc-mfe-github-api.cyclic.app' }// dotenv.config().parsed
+const env = dotenv.config().parsed || { API_URL: 'https://poc-mfe-github-api.cyclic.app', DASHBOARD_URL:"https://poc-mfe-container.onrender.com/logout" }// dotenv.config().parsed
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {

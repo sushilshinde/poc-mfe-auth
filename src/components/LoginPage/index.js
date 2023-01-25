@@ -31,7 +31,7 @@ function Login() {
             .then(res => {
                 localStorage.setItem('user-token', res.token)
                 toast.success('Login Success!!!')
-                setTimeout(() => navigate('/dashboard'), 3000)
+                setTimeout(() => window.location.href = process.env.DASHBOARD_URL, 3000)
             })
             .catch(err => {
                 toast.error('Login Failed!!!')
