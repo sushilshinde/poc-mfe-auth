@@ -55,7 +55,8 @@ module.exports = {
         name: "Login",
         filename: "remoteEntry.js",
         exposes: {
-            "./LoginComponent": "./src/components/LoginPage/"
+            "./LoginComponent": "./src/components/LoginPage/",
+            "./LogoutComponent": "./src/components/Logout/"
         },
         shared: {
             ...dependencies,
@@ -81,6 +82,7 @@ module.exports = {
     static: {
         directory: path.join(__dirname, "build")
     },
-    port: 3005
+    port: 3005,
+    historyApiFallback: true,
   }
 }
