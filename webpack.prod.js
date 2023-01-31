@@ -54,7 +54,8 @@ module.exports = {
       name: "Login",
       filename: "remoteEntry.js",
       exposes: {
-          "./LoginComponent": "./src/components/LoginPage/"
+          "./LoginComponent": "./src/components/LoginPage/",
+          "./LogoutComponent": "./src/components/Logout/"
       },
         shared: {
             ...dependencies,
