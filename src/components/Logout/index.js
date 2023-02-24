@@ -1,12 +1,10 @@
 import React from 'react'
 import {Button, Col, Container, Form, Row, Image } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
 import Notification from '../Notification'
 import logo from "../../assets/images/logo.png";
 import '../LoginPage/index.css';
 
 const Logout = () => {
-    const navigate = useNavigate()
   return (
     <Container fluid className="h-auto login-card">
             <Notification />
@@ -18,7 +16,7 @@ const Logout = () => {
                         <Row className="justify-content-md-center">
                             <Col lg={6}>
                                 <Button variant="primary" type="button" onClick={() => {
-                                    navigate('/')
+                                    window.location.href = process.env.LOGOUT_URL
                                 }}>
                                     Login Again
                                 </Button>
