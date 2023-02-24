@@ -5,6 +5,9 @@ Create an environment configuration file by the format mentioned in the example 
 
 [Documentation for Local Deployment](https://wiki.msystechnologies.com/doc/mfe-documentation-Ng5uksSbT2/edit#h-local-deployment)
 
+## Environment Configuration:
+Set env variables as per below syntax before running the app provided in .env.example file
+
 ## Available Scripts
 
 In the project directory, you can run:
